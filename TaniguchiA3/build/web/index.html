@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Taniguchi A3</title>
+
+        <link rel="stylesheet" href="mainStyleSheet.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1>Movies</h1>
+
+        <button id="GetButton">Get Data</button>
+        <br>
+        <button id="AddButton">Add</button>
+        <button id="DeleteButton" disabled>Delete</button>
+        <button id="UpdateButton" disabled>Update</button>
+
+        <div id="AddUpdatePanel">
+
+            <div>
+                <div class="formLabel">Movie ID</div><input id="movieIDInput" type="number">
+            </div>
+            <div>
+                <div class="formLabel">Title</div><input id="titleInput" type="text">
+            </div>
+            <div>
+                <div class="formLabel">Release Year</div><input id="releaseYearInput" type="number" min="0">
+            </div>
+            <div>
+                <div class="formLabel">Length</div><input id="lengthInput" type="number" min="1">
+            </div>
+            <div>
+                <div class="formLabel">Rating</div><input id="ratingInput" type="number" min="0" max="5">
+            </div>
+            <div>
+                <button id="DoneButton">Done</button>
+                <button id="CancelButton">Cancel</button>
+            </div>
+        </div>
+
+        <table id="table">
+            <tr>
+                <th>Movie ID</th>
+                <th>Title</th>
+                <th>Release Year</th>
+                <th>Length (minutes)</th>
+                <th>Rating</th>
+            </tr>
+        </table>
+
+    </body>
+</html>
